@@ -8,7 +8,7 @@ Esta es una aplicación FastAPI simple que proporciona una interfaz para acceder
 - MongoDB
 
 ## Instalación
-1. Create a virtual environment and activate it:
+1. Crea un entorno virtual y actívalo:
 ```
 python3 -m venv venv
 source venv/bin/activate
