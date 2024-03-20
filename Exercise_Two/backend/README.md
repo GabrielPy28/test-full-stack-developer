@@ -1,25 +1,25 @@
 # Backend
 Esta es una aplicación FastAPI simple que proporciona una interfaz para acceder a álbumes, publicaciones y fotos de los usuarios desde la API JSONPlaceholder. La aplicación también registra cada solicitud de API con fines de auditoría y depuración.
 
-## Prerequisites
+## Pre-requisitos
 - Python 3.8 or higher
 - FastAPI
 - Uvicorn
 - MongoDB
 
-## Installation
+## Instalación
 1. Create a virtual environment and activate it:
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-2. Install the required packages:
+2. Instalar los paquetes requeridos:
 ```
 pip install -r requirements.txt
 ```
 
-3. Run the application:
+3. Ejecutar la aplicación:
 ```
 uvicorn main:app --reload
 ```
@@ -30,7 +30,7 @@ The API documentation is available at
 - http://localhost:8000/redoc
 
 ## Endpoints
-- `GET /users`: Returns a list of users.
+- `GET /users`: Devuelve una lista de usuarios.
     - Curl:
         ```
         curl -X 'GET' \
@@ -39,7 +39,7 @@ The API documentation is available at
         ```
     - Request URL: `http://localhost:8000/users`
 
-- `GET /users/{user_id}`: Returns a specific user.
+- `GET /users/{user_id}`: Devuelve una usuario específico.
     - Curl:
         ```
         curl -X 'GET' \
@@ -48,7 +48,7 @@ The API documentation is available at
         ```
     - Request URL: `http://localhost:8000/users/3`
 
-- `GET /posts/{user_id}`: Returns a list of posts by a user with the given ID.
+- `GET /posts/{user_id}`: Devuelve una lista de publicaciones de un usuario con el ID dado.
     - Curl:
         ```
         curl -X 'GET' \
@@ -57,7 +57,7 @@ The API documentation is available at
         ```
     - Request URL: `http://localhost:8000/post/5`
 
-- `GET /photos/{user_id}`: Returns a list of photos by a user with the given ID.
+- `GET /photos/{user_id}`: Devuelve una lista de fotos de un usuario con la identificación proporcionada.
     - Curl:
         ```
         curl -X 'GET' \
@@ -66,7 +66,7 @@ The API documentation is available at
         ```
     - Request URL: `http://localhost:8000/photos/6`
 
-- `GET /logs`: Returns a list of logs.
+- `GET /logs`: Devuelve una lista de los Logs registrados en la base de datos.
     - Curl:
         ```
         curl -X 'GET' \
